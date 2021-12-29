@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+import { Observable } from 'rxjs';
+import { map, shareReplay } from "rxjs/operators";
+import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-fahad';
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe(Breakpoints.Handset)
+    .pipe(
+      map((result) => result.matches),
+      shareReplay()
+    );
+  constructor(private breakpointObserver: BreakpointObserver) { }
+  isLoading = false;
 }
+
