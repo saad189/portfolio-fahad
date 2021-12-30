@@ -1,17 +1,22 @@
 a {
+    font-family: monospace;
     text-transform: uppercase;
     font-size: x-large;
-    animation-duration: 1s;
+    transition: 0.2s linear;
     text-decoration: none;
     padding: 1rem;
+    color: white;
+    font-weight: 100;
 }
 
 a:hover {
-    font-size: xx-large;
+    font-size: 2rem;
     text-decoration: underline;
+    font-weight: bolder;
+    letter-spacing: 3px;
 }
 
 .mat-custom-row {
     justify-content: center;
-    background-color: rgb(0, 255, 0, 0);
+    background: black;
 }
