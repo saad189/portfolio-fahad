@@ -17,10 +17,7 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { MatInputModule } from "@angular/material/input";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import {
-  MatProgressSpinnerModule,
-  MatProgressSpinner,
-} from "@angular/material/progress-spinner";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTableModule } from "@angular/material/table";
 import { MatTabsModule } from "@angular/material/tabs";
@@ -37,7 +34,6 @@ import { MatDialogModule } from "@angular/material/dialog";
 
 const modules = [
   LayoutModule,
-  MatProgressSpinner,
   MatDialogModule,
   MatSlideToggleModule,
   MatInputModule,
