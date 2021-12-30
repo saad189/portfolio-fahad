@@ -2,12 +2,17 @@
   background: black;
   width: 100vw;
   height: 100vh;
+  .text-container {
+  }
   .text-area {
     display: flex;
+    flex-direction: column;
   }
   .display-1 {
     text-transform: uppercase;
     color: blue;
-    font-size: 6rem;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 6rem;
   }
 }

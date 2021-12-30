@@ -8,6 +8,7 @@ import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
+  name = 'Fahad Nasir'
   title = "portfolio-fahad";
   isNavBarFixed = true;
   isHandset$: Observable<boolean> = this.breakpointObserver
@@ -16,6 +17,6 @@ export class AppComponent {
       map((result) => result.matches),
       shareReplay()
     );
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) { }
   isLoading = false;
 }
