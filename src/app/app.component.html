@@ -20,13 +20,19 @@
       class="no_scroll mat-custom-row"
       *ngIf="(isHandset$ | async) === false"
     >
-      <a routerLinkActive="focused" routerLink=""> benefits </a>
-      <a routerLinkActive="focused" routerLink=""> projects </a>
-      <a routerLinkActive="focused" routerLink="">
+      <a routerLinkActive="focused" routerLink="/" fragment="benefits">
+        benefits
+      </a>
+      <a routerLinkActive="focused" routerLink="/" fragment="projects">
+        projects
+      </a>
+      <a routerLinkActive="focused" routerLink="/" fragment="name">
         {{ name }}
       </a>
-      <a routerLinkActive="focused" routerLink=""> process </a>
-      <a routerLinkActive="focused" routerLink=""> faqs </a>
+      <a routerLinkActive="focused" routerLink="/" fragment="process">
+        process
+      </a>
+      <a routerLinkActive="focused" routerLink="/" fragment="faqs"> faqs </a>
 
       <!-- [class.focused]="routes.programs.value" -->
     </mat-toolbar>
@@ -44,10 +50,11 @@
       class="pt-6"
       *ngIf="isNavBarFixed && (isHandset$ | async) === false"
     ></div>
-    <app-profile></app-profile>
-    <app-statistics></app-statistics>
-    <app-certifications-info></app-certifications-info>
-    <app-process></app-process>
+    <app-profile id="name"></app-profile>
+    <app-statistics id="benefits"></app-statistics>
+    <app-certifications-info id="projects"></app-certifications-info>
+    <app-process id="process"></app-process>
+    <app-process id="faqs"></app-process>
 
     <app-footer></app-footer>
   </mat-sidenav-content>
