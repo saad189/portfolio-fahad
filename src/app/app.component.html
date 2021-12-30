@@ -1,6 +1,12 @@
 <mat-sidenav-container [hasBackdrop]="" class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === true">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === true"
+  >
     <mat-nav-list>
       <a mat-list-item routerLink="/podcast"> PODCAST </a>
     </mat-nav-list>
@@ -8,42 +14,40 @@
 
   <!-- Start of Content -->
   <mat-sidenav-content>
-
-
-
-    <mat-toolbar color="primary" [ngClass]="isNavBarFixed ? 'mat-elevation-z8 fixed-nav' : ''"
-      class="no_scroll mat-custom-row" *ngIf="(isHandset$ | async) === false">
-
-
+    <mat-toolbar
+      color="primary"
+      [ngClass]="isNavBarFixed ? 'mat-elevation-z8 fixed-nav' : ''"
+      class="no_scroll mat-custom-row"
+      *ngIf="(isHandset$ | async) === false"
+    >
+      <a routerLinkActive="focused" routerLink=""> benefits </a>
+      <a routerLinkActive="focused" routerLink=""> projects </a>
       <a routerLinkActive="focused" routerLink="">
-        benefits
+        {{ name }}
       </a>
-      <a routerLinkActive="focused" routerLink="">
-        projects
-      </a>
-      <a routerLinkActive="focused" routerLink="">
-        {{name}}
-      </a>
-      <a routerLinkActive="focused" routerLink="">
-        process
-      </a>
-      <a routerLinkActive="focused" routerLink="">
-        faqs
-      </a>
+      <a routerLinkActive="focused" routerLink=""> process </a>
+      <a routerLinkActive="focused" routerLink=""> faqs </a>
 
       <!-- [class.focused]="routes.programs.value" -->
     </mat-toolbar>
 
     <mat-toolbar *ngIf="(isHandset$ | async) === true">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"></button>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      ></button>
     </mat-toolbar>
 
-    <div class="pt-6" *ngIf="isNavBarFixed && (isHandset$ | async) === false"></div>
+    <div
+      class="pt-6"
+      *ngIf="isNavBarFixed && (isHandset$ | async) === false"
+    ></div>
     <app-profile></app-profile>
     <app-statistics></app-statistics>
-    <app-process-cards></app-process-cards>
     <app-certifications-info></app-certifications-info>
-    <app-faqs></app-faqs>
+    <app-process></app-process>
 
     <app-footer></app-footer>
   </mat-sidenav-content>

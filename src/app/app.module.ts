@@ -31,6 +31,7 @@ import { MatSliderModule } from "@angular/material/slider";
 import { MatSelectModule } from "@angular/material/select";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
+import { ProcessComponent } from "src/Components/process/process.component";
 
 const modules = [
   LayoutModule,
@@ -65,9 +66,10 @@ const modules = [
     FaqsComponent,
     FooterComponent,
     ProfileComponent,
+    ProcessComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, modules],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
