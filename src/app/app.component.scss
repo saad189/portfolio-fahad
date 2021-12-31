@@ -1,22 +1,25 @@
 a {
-    font-family: monospace;
-    text-transform: uppercase;
-    font-size: x-large;
-    transition: 0.2s linear;
-    text-decoration: none;
-    padding: 1rem;
-    color: white;
-    font-weight: 100;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: xx-large;
+  transition: 0.2s linear;
+  text-decoration: none;
+
+  letter-spacing: 5px;
+  padding: 3rem;
+  color: white;
+  font-weight: 100;
 }
 
 a:hover {
-    font-size: 2rem;
-    text-decoration: underline;
-    font-weight: bolder;
-    letter-spacing: 3px;
+  font-size: 4rem;
+  padding-top: 4rem;
+  text-decoration: underline;
+  font-weight: bolder;
+  letter-spacing: 3px;
 }
 
 .mat-custom-row {
-    justify-content: center;
-    background: black;
+  justify-content: center;
+  background: black;
 }
