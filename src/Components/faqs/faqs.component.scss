@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+
+  .mat-expansion-panel {
+    border-radius: 2rem;
+    height: 20vh;
+  }
+  .mat-expansion-indicator {
+  }
+  .mat-expansion-panel-header-title {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .mat-expansion-panel-header {
+    height: inherit;
+  }
+
+  .grid-item {
+    width: 35vw;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  span {
+    align-self: center;
+    text-transform: uppercase;
+  }
+}
+.title-container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
