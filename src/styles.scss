@@ -36,9 +36,9 @@ body {
 }
 
 .display-2 {
-  letter-spacing: 10px;
-  word-spacing: 15px;
-  font-size: 5rem;
+  letter-spacing: 8px;
+  word-spacing: 14px;
+  font-size: 4.5rem;
   text-align: center;
   line-height: 6rem;
   text-transform: uppercase;
@@ -52,6 +52,14 @@ body {
   margin-bottom: 1.5rem !important;
 }
 
+.pt-2 {
+  padding-top: 1.5rem !important;
+}
+
 .pb-3 {
   padding-bottom: 2.5rem !important;
+}
+
+.mat-card {
+  border-radius: 2rem !important;
 }

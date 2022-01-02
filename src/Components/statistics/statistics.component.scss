@@ -1,6 +1,6 @@
 .container {
   background: lightgray;
-
+  padding-left: 20vw;
   .text-area {
     display: flex;
     justify-content: center;
@@ -9,7 +9,6 @@
   }
   span {
     text-transform: uppercase;
-    margin-left: 20vw;
     width: 70vw;
     display: inline-block;
     line-height: 5rem;

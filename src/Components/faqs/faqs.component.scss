@@ -2,23 +2,24 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
+  padding-top: 2rem;
 
   .mat-expansion-panel {
     border-radius: 2rem;
-    height: 20vh;
+    height: 22vh;
   }
   .mat-expansion-indicator {
   }
   .mat-expansion-panel-header-title {
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .mat-expansion-panel-header {
     height: inherit;
   }
 
   .grid-item {
-    width: 35vw;
+    width: 36vw;
     text-align: center;
     padding: 1rem;
   }
@@ -30,6 +31,6 @@
 }
 .title-container {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 7rem;
   margin-bottom: 2rem;
 }
