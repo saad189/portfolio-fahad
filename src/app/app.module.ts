@@ -32,6 +32,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
 import { ProcessComponent } from "src/Components/process/process.component";
+import { ImageCardsComponent } from "src/Components/Shared/image-cards/image-cards.component";
 
 const modules = [
   LayoutModule,
@@ -66,7 +67,8 @@ const modules = [
     FaqsComponent,
     FooterComponent,
     ProfileComponent,
-    ProcessComponent
+    ProcessComponent,
+    ImageCardsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, modules],
   providers: [],

@@ -12,6 +12,10 @@ body {
   width: 100vw;
   height: 150vh;
 }
+.text-area {
+  display: flex;
+  flex-direction: column;
+}
 
 .display-1 {
   font-family: Montserrat;

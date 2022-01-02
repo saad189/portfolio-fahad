@@ -1,7 +1,16 @@
 <div class="container">
-  <div>
+  <div class="row">
+    <span>Benfits</span>
+  </div>
+  <div class="row"></div>
+  <div class="text-area">
     <span>We Want You</span>
     <span>To Have A</span>
     <span>Great Website</span>
+  </div>
+  <div class="cards-container">
+    <ng-container *ngFor="let card of benefitsCards">
+      <app-image-cards [card]="card"></app-image-cards>
+    </ng-container>
   </div>
 </div>
