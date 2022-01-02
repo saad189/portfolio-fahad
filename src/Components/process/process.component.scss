@@ -2,11 +2,28 @@
   background: lightgray;
   .divider-container {
     mat-divider {
-      width: 70vw;
-      border-top-color: rgba(0, 0, 0, .4);
+      width: 75vw;
+      border-top-color: rgba(0, 0, 0, 0.4);
       border-top-width: 2px;
     }
     display: flex;
     justify-content: center;
+  }
+  span {
+    text-transform: uppercase;
+    margin-left: 15vw;
+    width: 70vw;
+    display: inline-block;
+    line-height: 5rem;
+    font-size: 2rem;
+  }
+  .display-3 {
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.7rem;
+  }
+  .row {
+    padding: 2rem;
   }
 }
