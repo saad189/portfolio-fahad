@@ -1,4 +1,7 @@
 .container {
+  padding-top: 2rem;
+  height: fit-content;
+
   background: lightgray;
   .divider-container {
     mat-divider {
@@ -14,10 +17,11 @@
     margin-left: 15vw;
     width: 70vw;
     display: inline-block;
-    line-height: 5rem;
+
     font-size: 2rem;
   }
   .display-3 {
+    line-height: 5rem;
     font-size: 4rem;
     font-weight: bolder;
     letter-spacing: 0.5rem;
