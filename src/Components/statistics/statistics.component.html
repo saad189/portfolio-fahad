@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-custom pt-custom">
   <div class="row">
     <span class="title">Benfits</span>
   </div>
@@ -11,9 +11,24 @@
   </div>
   <div class="row">
     <div class="cards-container">
-      <ng-container *ngFor="let card of benefitsCards; let index = i">
-        <app-image-cards [card]="card"></app-image-cards>
-      </ng-container>
+      <div class="row">
+        <div class="col-lg-5">
+          <app-image-cards [card]="benefitsCards[0]"></app-image-cards>
+        </div>
+        <div class="col-lg-5">
+          <div class="grid-container">
+            <ng-container *ngFor="let card of smallCards; let i = index">
+              <div class="{{ i > 1 ? 'pt-2' : '' }} grid-item pr-2">
+                <app-image-cards [card]="card"></app-image-cards>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-3 pb-custom">
+        <app-image-cards [card]="benefitsCards[1]"></app-image-cards>
+      </div>
     </div>
   </div>
 </div>

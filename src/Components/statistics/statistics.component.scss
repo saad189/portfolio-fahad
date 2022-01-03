@@ -1,6 +1,6 @@
-.container {
+.container-custom {
   background: lightgray;
-  padding-left: 20vw;
+  height: fit-content;
   .text-area {
     display: flex;
     justify-content: center;
@@ -8,12 +8,14 @@
     margin-bottom: 5rem;
   }
   span {
+    padding-left: 20vw;
     text-transform: uppercase;
     width: 70vw;
     display: inline-block;
     line-height: 5rem;
   }
   .title {
+    padding-left: 21vw;
     font-size: xx-large;
   }
   .display-4 {
@@ -23,5 +25,19 @@
     font-weight: 350;
     letter-spacing: 0.4rem;
     word-spacing: 0.7rem;
+  }
+}
+
+.cards-container {
+  padding-left: 15vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+
+  .grid-item {
+    text-align: center;
   }
 }
