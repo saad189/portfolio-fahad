@@ -1,8 +1,10 @@
+@import "../../variables.scss";
+
 .container-custom {
   padding-top: 2rem;
   height: fit-content;
 
-  background: lightgray;
+  background: $grayColor;
   .divider-container {
     mat-divider {
       width: 75vw;

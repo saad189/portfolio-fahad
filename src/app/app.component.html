@@ -57,5 +57,8 @@
     <!-- <app-process id="faqs"></app-process> -->
 
     <app-footer></app-footer>
+    <button *ngIf="pageYoffset > 0" mat-raised-button (click)="scrollToTop()">
+      <mat-icon>arrow_upward</mat-icon>
+    </button>
   </mat-sidenav-content>
 </mat-sidenav-container>

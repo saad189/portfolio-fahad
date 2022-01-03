@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 a {
   font-family: monospace;
   text-transform: uppercase;
@@ -7,7 +9,7 @@ a {
 
   letter-spacing: 5px;
   padding: 3rem;
-  color: white;
+  color: $whiteColor;
   font-weight: 100;
 }
 
@@ -23,6 +25,18 @@ a:hover {
   justify-content: center;
   background: black;
 }
-.mat-drawer{
+.mat-drawer {
   overflow-x: hidden;
+}
+
+.mat-drawer-content {
+  overflow-x: hidden !important;
+}
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: $grayColor;
+  width: 3rem;
+  height: 3rem;
 }

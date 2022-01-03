@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .container-custom {
-  background: lightgray;
+  background: $grayColor;
   height: fit-content;
   .text-area {
     display: flex;
