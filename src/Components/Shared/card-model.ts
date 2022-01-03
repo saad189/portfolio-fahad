@@ -6,4 +6,6 @@ export interface CardInfo {
     content?: string;
     width: string;
     height: string;
+    titleClass?: string;
+    contentClass?: string;
 }
