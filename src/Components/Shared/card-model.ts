@@ -4,8 +4,8 @@ export interface CardInfo {
     subtitle?: string;
     imageUrl?: string;
     content?: string;
-    width: string;
-    height: string;
+    width?: string;
+    height?: string;
     titleClass?: string;
     contentClass?: string;
 }

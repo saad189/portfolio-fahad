@@ -9,7 +9,12 @@
     </span>
   </div>
 
-  <app-process-cards></app-process-cards>
+  <div class="cards-container">
+    <div class="row" *ngFor="let process of processes">
+      <app-process-cards [card]="process"></app-process-cards>
+    </div>
+  </div>
+
   <div class="divider-container">
     <mat-divider class="m-2"></mat-divider>
   </div>

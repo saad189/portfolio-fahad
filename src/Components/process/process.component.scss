@@ -32,4 +32,9 @@
   .row {
     padding: 2rem;
   }
+  .cards-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }

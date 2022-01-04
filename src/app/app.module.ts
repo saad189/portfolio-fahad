@@ -33,6 +33,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
 import { ProcessComponent } from "src/Components/process/process.component";
 import { ImageCardsComponent } from "src/Components/Shared/image-cards/image-cards.component";
+import { TemplateCardComponent } from "src/Components/Shared/template-card/template-card.component";
 
 const modules = [
   LayoutModule,
@@ -68,10 +69,11 @@ const modules = [
     FooterComponent,
     ProfileComponent,
     ProcessComponent,
-    ImageCardsComponent
+    ImageCardsComponent,
+    TemplateCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, modules],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
