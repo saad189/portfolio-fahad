@@ -30,9 +30,10 @@ export class CertificationsInfoComponent implements OnInit {
     `${this.refUrl}/illustrator.png`,
   ];
 
-  researchedUrl = `${this.refUrl}/`;
+  researchedUrl = `${this.refUrl}/researched.jpg`;
   responsiveUrl = `${this.refUrl}/responsive.png`;
   udemyUrl = `${this.refUrl}/udemy.png`;
+  courseraUrl = `${this.refUrl}/coursera.png`
 
   myModel = {};
 
