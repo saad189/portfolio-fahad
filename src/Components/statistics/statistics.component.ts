@@ -60,7 +60,7 @@ export class StatisticsComponent implements OnInit {
     {
       title: 'Stunning Designs',
       content: 'We build beautifully designed web and mobile projects for you using modern tools',
-      width: '68rem',
+      width: '69rem',
       height: '24rem',
       imageUrl: "../../assets/appImage.png",
       titleClass: "",

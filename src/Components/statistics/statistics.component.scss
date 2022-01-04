@@ -3,6 +3,7 @@
 .container-custom {
   background: $grayColor;
   height: fit-content;
+
   .text-area {
     display: flex;
     justify-content: center;
@@ -31,13 +32,15 @@
 }
 
 .cards-container {
-  padding-left: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: center;
+  justify-content: start;
 
   .grid-item {
     text-align: center;
