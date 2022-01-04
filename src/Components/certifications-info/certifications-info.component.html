@@ -7,9 +7,39 @@
     </div>
   </div>
 
-  <ng-template #myTemplate>
+  <ng-template #myTemplate let-data="data">
     <h1>This is my Template</h1>
-</ng-template>
+    <h4>{{ data.subheading }}</h4>
+  </ng-template>
+
+  <ng-template #researched let-data="data">
+    <span>Researched Work</span>
+    <img [src]="researchedUrl" />
+  </ng-template>
+
+  <ng-template #designtools let-data="data">
+    <div class="grid-container">
+      <div class="grid-item" *ngFor="let image of designImages">
+        <img [src]="image" />
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #certifications let-data="data">
+    <div class="row"></div>
+    <div class="row">
+      <img [src]="udemyUrl" />
+    </div>
+  </ng-template>
+
+  <ng-template #responsive let-data="data">
+    <span>Responsive Design</span>
+    <img [src]="responsiveUrl" />
+  </ng-template>
 
   <app-template-card [model]="myModel"></app-template-card>
+  <app-template-card [model]="researchedModel"></app-template-card>
+  <app-template-card [model]="designtoolsModel"></app-template-card>
+  <app-template-card [model]="certificationsModel"></app-template-card>
+  <app-template-card [model]="responsiveModel"></app-template-card>
 </div>
