@@ -7,58 +7,73 @@
     </div>
   </div>
 
-  <ng-template #myTemplate let-data="data">
-    <h1>This is my Template</h1>
-    <h4>{{ data.subheading }}</h4>
+  <ng-template #researched>
+    <img id="research" [src]="researchedUrl" />
+    <span class="top-middle">Researched Work</span>
   </ng-template>
 
-  <ng-template #researched let-data="data">
-    <span>Researched Work</span>
-    <img [src]="researchedUrl" />
-  </ng-template>
-
-  <ng-template #designtools let-data="data">
+  <ng-template #designtools>
     <div class="grid-container">
       <div class="grid-item" *ngFor="let image of designImages">
         <img [src]="image" />
       </div>
     </div>
+    <span>Modern Designing Tools</span>
   </ng-template>
 
-  <ng-template #certifications let-data="data">
+  <ng-template #certifications>
     <div class="row">
       <span>Certifications</span>
     </div>
+
     <div class="row">
-      <img [src]="udemyUrl" />
+      <img id="udemy" [src]="udemyUrl" />
     </div>
+
     <div class="row">
       <span>Master Digital Product</span>
       <span>Design: UX Research & UI Design</span>
     </div>
+
     <mat-divider class="m-2"></mat-divider>
+
     <div class="row">
       <span>User Experience Design</span>
       <span>Essentials - Adobe XD UI/UX Design</span>
     </div>
+
     <mat-divider class="m-2"></mat-divider>
+
     <div class="row">
-      <img [src]="courseraUrl" />
+      <img id="coursera" [src]="courseraUrl" />
     </div>
+
     <div class="row">
       <span> UX Design - RoadMap </span>
       <span>Sponsored By Google</span>
     </div>
   </ng-template>
 
-  <ng-template #responsive let-data="data">
+  <ng-template #responsive>
     <span>Responsive Design</span>
-    <img [src]="responsiveUrl" />
+    <img id="responsive" [src]="responsiveUrl" />
   </ng-template>
 
-  <app-template-card [model]="myModel"></app-template-card>
-  <app-template-card [model]="researchedModel"></app-template-card>
-  <app-template-card [model]="designtoolsModel"></app-template-card>
-  <app-template-card [model]="certificationsModel"></app-template-card>
-  <app-template-card [model]="responsiveModel"></app-template-card>
+  <div class="row">
+    <div class="col-lg-6">
+      <app-template-card [model]="researchedModel"></app-template-card>
+    </div>
+    <div class="col-lg-6">
+      <app-template-card [model]="designtoolsModel"></app-template-card>
+    </div>
+  </div>
+
+  <div class="row pb-custom pt-3">
+    <div class="col-lg-6">
+      <app-template-card [model]="certificationsModel"></app-template-card>
+    </div>
+    <div class="col-lg-6">
+      <app-template-card [model]="responsiveModel"></app-template-card>
+    </div>
+  </div>
 </div>

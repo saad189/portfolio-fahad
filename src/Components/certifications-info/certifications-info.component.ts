@@ -6,7 +6,7 @@ import { Component, OnInit, TemplateRef, ViewChild } from "@angular/core";
   styleUrls: ["./certifications-info.component.scss"],
 })
 export class CertificationsInfoComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
   @ViewChild("myTemplate", { static: true }) myTemplate: TemplateRef<any>;
 
@@ -35,8 +35,6 @@ export class CertificationsInfoComponent implements OnInit {
   udemyUrl = `${this.refUrl}/udemy.png`;
   courseraUrl = `${this.refUrl}/coursera.png`
 
-  myModel = {};
-
   researchedModel = {};
 
   designtoolsModel = {};
@@ -46,25 +44,29 @@ export class CertificationsInfoComponent implements OnInit {
   responsiveModel = {};
 
   ngOnInit() {
-    this.myModel = {
-      template: this.myTemplate,
-      subheading: "this is my subheading",
-    };
 
     this.researchedModel = {
       template: this.researched,
+      width: '30rem',
+      height: '20rem',
     };
 
     this.designtoolsModel = {
       template: this.designtools,
+      width: '30rem',
+      height: '20rem',
     };
 
     this.certificationsModel = {
       template: this.certifications,
+      width: '20rem',
+      height: '40rem',
     };
 
     this.responsiveModel = {
       template: this.responsive,
+      width: '40rem',
+      height: '40rem',
     };
   }
 }

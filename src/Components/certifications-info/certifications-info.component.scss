@@ -2,8 +2,39 @@
 
 .container-custom {
   background: $whiteColor;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-  img {
-    width: 60vw;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  .grid-item {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    img {
+      width: 5rem;
+    }
+    text-align: center;
   }
+}
+
+#research {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: -webkit-fill-available;
+  opacity: 60%;
+}
+
+.top-middle {
+  font-weight: 400;
+  font-size: large;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

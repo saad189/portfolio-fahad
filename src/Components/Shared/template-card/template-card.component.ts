@@ -7,11 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TemplateCardComponent implements OnInit {
 
-  @Input() model : any;
+  @Input() model: any;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.model)
   }
 
 }

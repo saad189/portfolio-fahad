@@ -1,4 +1,10 @@
-<span>Lets see if it works</span>
-<ng-container
-  *ngTemplateOutlet="model.template; context: { data: model }"
-></ng-container>
+<mat-card
+  class="example-card"
+  style="width: {{ model.width }}; height: {{ model.height }}"
+>
+  <mat-card-content>
+    <ng-container
+      *ngTemplateOutlet="model.template; context: { data: model }"
+    ></ng-container>
+  </mat-card-content>
+</mat-card>
