@@ -65,7 +65,7 @@ export class CertificationsInfoComponent implements OnInit {
 
     this.responsiveModel = {
       template: this.responsive,
-      width: '40rem',
+      width: '41rem',
       height: '40rem',
     };
   }
