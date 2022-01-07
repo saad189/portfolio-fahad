@@ -55,18 +55,22 @@ export class CertificationsInfoComponent implements OnInit {
       template: this.designtools,
       width: '30rem',
       height: '20rem',
+      background: '#c4c4c2'
     };
 
     this.certificationsModel = {
       template: this.certifications,
-      width: '20rem',
+      width: '25rem',
       height: '40rem',
+      background: '#f2e2bd'
     };
 
     this.responsiveModel = {
       template: this.responsive,
-      width: '41rem',
+      overflow: 'visible',
+      width: '36rem',
       height: '40rem',
+      background: '#292928'
     };
   }
 }

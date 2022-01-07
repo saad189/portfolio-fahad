@@ -12,7 +12,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: center;
+
   .grid-item {
     padding: 1rem 1.5rem 1rem 1.5rem;
     img {
@@ -32,9 +32,69 @@
 
 .top-middle {
   font-weight: 400;
-  font-size: large;
+  font-size: 1.2rem;
   position: absolute;
-  top: 5%;
-  left: 50%;
+  top: 8%;
+  left: 45%;
   transform: translate(-50%, -50%);
+}
+
+.researched {
+}
+.design-tools {
+  text-align: center;
+  span {
+    padding-top: 1rem;
+    font-size: x-large;
+  }
+}
+
+.certifications {
+  text-align: center;
+
+  :first-child span {
+    padding-top: 2rem;
+    font-size: x-large;
+  }
+  span {
+    line-height: 1.5rem;
+    font-size: large;
+  }
+  .image-block {
+    display: block;
+    img {
+      width: 50%;
+      padding: 1rem;
+    }
+  }
+  #coursera {
+    border-radius: 50%;
+    width: 40%;
+  }
+  mat-divider {
+    width: 70%;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-top-width: 1px;
+    margin-left: 15%;
+  }
+}
+
+.responsive {
+  text-align: center;
+  span {
+    padding-top: 2.5rem;
+    font-size: x-large;
+    color: rgb(224, 224, 224);
+  }
+  img {
+    position: absolute;
+    left: -20px;
+    top: 8rem;
+    width: 125%;
+  }
+}
+
+span {
+  display: block;
+  letter-spacing: 3px;
 }

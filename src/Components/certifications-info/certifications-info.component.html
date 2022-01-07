@@ -8,58 +8,66 @@
   </div>
 
   <ng-template #researched>
-    <img id="research" [src]="researchedUrl" />
-    <span class="top-middle">Researched Work</span>
+    <div class="researched">
+      <img id="research" [src]="researchedUrl" />
+      <span class="top-middle">Researched Work</span>
+    </div>
   </ng-template>
 
   <ng-template #designtools>
-    <div class="grid-container">
-      <div class="grid-item" *ngFor="let image of designImages">
-        <img [src]="image" />
+    <div class="design-tools">
+      <div class="grid-container">
+        <div class="grid-item" *ngFor="let image of designImages">
+          <img [src]="image" />
+        </div>
       </div>
+      <span>Modern Designing Tools</span>
     </div>
-    <span>Modern Designing Tools</span>
   </ng-template>
 
   <ng-template #certifications>
-    <div class="row">
-      <span>Certifications</span>
-    </div>
+    <div class="certifications">
+      <div class="row">
+        <span>Certifications</span>
+      </div>
 
-    <div class="row">
-      <img id="udemy" [src]="udemyUrl" />
-    </div>
+      <div class="row image-block">
+        <img id="udemy" [src]="udemyUrl" />
+      </div>
 
-    <div class="row">
-      <span>Master Digital Product</span>
-      <span>Design: UX Research & UI Design</span>
-    </div>
+      <div class="row pb-3">
+        <span>Master Digital Product</span>
+        <span>Design: UX Research & UI Design</span>
+      </div>
 
-    <mat-divider class="m-2"></mat-divider>
+      <mat-divider></mat-divider>
 
-    <div class="row">
-      <span>User Experience Design</span>
-      <span>Essentials - Adobe XD UI/UX Design</span>
-    </div>
+      <div class="row pt-3 pb-3">
+        <span>User Experience Design</span>
+        <span>Essentials - Adobe XD UI/UX Design</span>
+      </div>
 
-    <mat-divider class="m-2"></mat-divider>
+      <mat-divider></mat-divider>
 
-    <div class="row">
-      <img id="coursera" [src]="courseraUrl" />
-    </div>
+      <div class="row image-block pt-2 pb-3">
+        <img id="coursera" [src]="courseraUrl" />
+      </div>
 
-    <div class="row">
-      <span> UX Design - RoadMap </span>
-      <span>Sponsored By Google</span>
+      <div class="row">
+        <span> UX Design - RoadMap </span>
+        <span>Sponsored By Google</span>
+      </div>
     </div>
   </ng-template>
 
   <ng-template #responsive>
-    <span>Responsive Design</span>
-    <img id="responsive" [src]="responsiveUrl" />
+    <div class="responsive">
+      <span>Responsive Design</span>
+      <img id="responsive" [src]="responsiveUrl" />
+    </div>
   </ng-template>
 
-  <div class="row">
+  <div class="row pt-custom">
     <div class="col-lg-6">
       <app-template-card [model]="researchedModel"></app-template-card>
     </div>
@@ -69,7 +77,7 @@
   </div>
 
   <div class="row pb-custom pt-3">
-    <div class="col-lg-4">
+    <div class="col-lg-5">
       <app-template-card [model]="certificationsModel"></app-template-card>
     </div>
     <div class="col-lg-7">
