@@ -55,14 +55,14 @@ export class CertificationsInfoComponent implements OnInit {
       template: this.designtools,
       width: '30rem',
       height: '20rem',
-      background: '#c4c4c2'
+      background: 'rgb(196, 196, 194,0.4)'
     };
 
     this.certificationsModel = {
       template: this.certifications,
       width: '25rem',
       height: '40rem',
-      background: '#f2e2bd'
+      background: 'rgb(235, 217, 199,0.6)'
     };
 
     this.responsiveModel = {
@@ -70,7 +70,7 @@ export class CertificationsInfoComponent implements OnInit {
       overflow: 'visible',
       width: '36rem',
       height: '40rem',
-      background: '#292928'
+      background: 'rgb(41, 41, 40,0.8)'
     };
   }
 }
