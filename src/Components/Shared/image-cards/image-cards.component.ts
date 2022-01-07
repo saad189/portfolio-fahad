@@ -12,7 +12,7 @@ export class ImageCardsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.card)
+
   }
 
 }
