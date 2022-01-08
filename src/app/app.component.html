@@ -13,7 +13,7 @@
   </mat-sidenav>
 
   <!-- Start of Content -->
-  <mat-sidenav-content>
+  <mat-sidenav-content id="name">
     <mat-toolbar
       color="primary"
       [ngClass]="isNavBarFixed ? 'mat-elevation-z8 fixed-nav' : ''"
@@ -50,11 +50,11 @@
       class="pt-6"
       *ngIf="isNavBarFixed && (isHandset$ | async) === false"
     ></div>
-    <app-profile id="name"></app-profile>
+    <app-profile></app-profile>
     <app-statistics id="benefits"></app-statistics>
     <app-certifications-info id="projects"></app-certifications-info>
     <app-process id="process"></app-process>
-    <!-- <app-process id="faqs"></app-process> -->
+    <app-faqs id="faqs"></app-faqs>
 
     <app-footer></app-footer>
     <button *ngIf="pageYoffset > 0" mat-raised-button (click)="scrollToTop()">
