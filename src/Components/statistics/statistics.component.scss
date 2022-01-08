@@ -74,9 +74,6 @@ span {
 .experience-container,
 .dedication-container,
 .projects-container {
-  display: flex;
-  flex-direction: column;
-
   padding-top: 4rem;
 
   .green-color {
@@ -103,5 +100,33 @@ span {
   .text {
     font-size: large;
     letter-spacing: 1px;
+  }
+}
+
+.designs-container {
+  img {
+    margin-left: -10rem;
+    margin-top: -4rem;
+    width: 150%;
+  }
+  .title {
+    padding-top: 3rem;
+    line-height: 4rem;
+    letter-spacing: 8px;
+    font-weight: 500;
+    font-size: 3.5rem;
+    padding-left: 3rem;
+  }
+  span {
+    color: white;
+  }
+  .text {
+    padding-top: 1rem;
+    line-height: 1.75rem;
+    padding-left: 10%;
+    width: 90%;
+    font-size: x-large;
+    letter-spacing: 2px;
+    word-spacing: 2px;
   }
 }

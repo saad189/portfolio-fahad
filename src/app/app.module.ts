@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CertificationsInfoComponent } from "src/Components/certifications-info/certifications-info.component";
 import { FaqsComponent } from "src/Components/faqs/faqs.component";
 import { FooterComponent } from "src/Components/footer/footer.component";
-import { HeaderComponent } from "src/Components/header/header.component";
 import { ProcessCardsComponent } from "src/Components/process-cards/process-cards.component";
 import { ProfileComponent } from "src/Components/profile/profile.component";
 import { StatisticsComponent } from "src/Components/statistics/statistics.component";
@@ -32,7 +31,6 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
 import { ProcessComponent } from "src/Components/process/process.component";
-import { ImageCardsComponent } from "src/Components/Shared/image-cards/image-cards.component";
 import { TemplateCardComponent } from "src/Components/Shared/template-card/template-card.component";
 
 const modules = [
@@ -61,7 +59,6 @@ const modules = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     StatisticsComponent,
     ProcessCardsComponent,
     CertificationsInfoComponent,
@@ -69,11 +66,11 @@ const modules = [
     FooterComponent,
     ProfileComponent,
     ProcessComponent,
-    ImageCardsComponent,
+
     TemplateCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, modules],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

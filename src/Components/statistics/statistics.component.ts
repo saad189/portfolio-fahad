@@ -63,7 +63,7 @@ export class StatisticsComponent implements OnInit {
       template: this.designsTemplate,
       width: '69rem',
       height: '24rem',
-      background: 'linear-gradient(to right, #e7505f , #ab62cf)'
+      background: 'linear-gradient(to right, #ff3347, #b542ed)'
     }
 
   }
