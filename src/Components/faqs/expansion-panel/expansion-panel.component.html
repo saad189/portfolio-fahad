@@ -1,0 +1,17 @@
+<mat-expansion-panel
+  class="container-fit"
+  hideToggle="true"
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"
+>
+  <mat-expansion-panel-header>
+    <mat-panel-description>
+      <mat-icon *ngIf="!panelOpenState">add</mat-icon>
+      <mat-icon *ngIf="panelOpenState">remove</mat-icon>
+    </mat-panel-description>
+    <mat-panel-title>
+      <span>{{ faq.Question }} </span>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <span>{{ faq.Answer }}</span>
+</mat-expansion-panel>

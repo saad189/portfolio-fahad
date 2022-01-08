@@ -6,9 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./faqs.component.scss"],
 })
 export class FaqsComponent implements OnInit {
-  panelOpenState = false;
 
-  constructor() {}
+
+  constructor() { }
   public InfoPair: { Question: string; Answer: string }[] = [
     {
       Question: "What Servies do you offer exactly?",
@@ -35,5 +35,5 @@ export class FaqsComponent implements OnInit {
       Answer: "My name is Fahad and I am a dumbass",
     },
   ];
-  ngOnInit() {}
+  ngOnInit() { }
 }

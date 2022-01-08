@@ -32,6 +32,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
 import { ProcessComponent } from "src/Components/process/process.component";
 import { TemplateCardComponent } from "src/Components/Shared/template-card/template-card.component";
+import { ExpansionPanelComponent } from "src/Components/faqs/expansion-panel/expansion-panel.component";
 
 const modules = [
   LayoutModule,
@@ -65,6 +66,7 @@ const modules = [
     FaqsComponent,
     FooterComponent,
     ProfileComponent,
+    ExpansionPanelComponent,
     ProcessComponent,
 
     TemplateCardComponent,

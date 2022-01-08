@@ -3,18 +3,7 @@
 </div>
 <div class="grid-container">
   <div *ngFor="let faq of InfoPair" class="grid-item">
-    <mat-expansion-panel
-      class="container-fit"
-      (opened)="panelOpenState = true"
-      (closed)="panelOpenState = false"
-    >
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <span>{{ faq.Question }} </span>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <span>{{ faq.Answer }}</span>
-    </mat-expansion-panel>
+    <app-expansion-panel [faq]="faq"></app-expansion-panel>
   </div>
 </div>
 <div class="pb-3"></div>

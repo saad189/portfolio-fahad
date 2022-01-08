@@ -1,0 +1,35 @@
+.mat-expansion-panel {
+  border-radius: 2rem;
+  height: 22vh;
+}
+
+.mat-expansion-panel-header-title {
+  font-size: x-large;
+  justify-content: center;
+  padding-left: 1rem;
+}
+.mat-expansion-panel-header {
+  height: inherit;
+}
+
+.title-container {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+mat-icon {
+  float: right;
+  color: black;
+  transform: scale(2);
+}
+.mat-expansion-panel-header-description {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 1vw;
+  justify-content: flex-end;
+}
+
+span {
+  align-self: center;
+  text-transform: uppercase;
+}

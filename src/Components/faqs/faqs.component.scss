@@ -4,33 +4,9 @@
   justify-content: center;
   padding-top: 2rem;
 
-  .mat-expansion-panel {
-    border-radius: 2rem;
-    height: 22vh;
-  }
-  .mat-expansion-indicator {
-  }
-  .mat-expansion-panel-header-title {
-    justify-content: center;
-    font-size: 1.2rem;
-  }
-  .mat-expansion-panel-header {
-    height: inherit;
-  }
-
   .grid-item {
     width: 36vw;
     text-align: center;
     padding: 1rem;
   }
-
-  span {
-    align-self: center;
-    text-transform: uppercase;
-  }
-}
-.title-container {
-  text-align: center;
-  margin-top: 7rem;
-  margin-bottom: 2rem;
 }
