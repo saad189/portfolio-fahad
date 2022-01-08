@@ -1,10 +1,13 @@
 .mat-expansion-panel {
   border-radius: 2rem;
   height: 22vh;
+  min-height: 15rem;
 }
 
 .mat-expansion-panel-header-title {
-  font-size: x-large;
+  font-size: 1.2vw;
+  letter-spacing: 0.05vw;
+  word-spacing: 0.05vw;
   justify-content: center;
   padding-left: 1rem;
 }
@@ -32,4 +35,8 @@ mat-icon {
 span {
   align-self: center;
   text-transform: uppercase;
+}
+
+.container-fit {
+  height: 5rem !important;
 }

@@ -1,5 +1,5 @@
 <mat-expansion-panel
-  class="container-fit"
+  [class]="panelOpenState ? 'container-fit' : ''"
   hideToggle="true"
   (opened)="panelOpenState = true"
   (closed)="panelOpenState = false"
