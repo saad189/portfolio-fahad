@@ -10,52 +10,27 @@ import { ProcessCardsComponent } from "src/Components/process-cards/process-card
 import { ProfileComponent } from "src/Components/profile/profile.component";
 import { StatisticsComponent } from "src/Components/statistics/statistics.component";
 import { LayoutModule } from "@angular/cdk/layout";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import { MatSlideToggleModule } from "@angular/material/slide-toggle";
-import { MatInputModule } from "@angular/material/input";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatButtonModule } from "@angular/material/button";
-import { MatTableModule } from "@angular/material/table";
-import { MatTabsModule } from "@angular/material/tabs";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
-import { MatMenuModule } from "@angular/material/menu";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatCardModule } from "@angular/material/card";
-import { MatBadgeModule } from "@angular/material/badge";
-import { MatSliderModule } from "@angular/material/slider";
-import { MatSelectModule } from "@angular/material/select";
-import { MatTooltipModule } from "@angular/material/tooltip";
-import { MatDialogModule } from "@angular/material/dialog";
 import { ProcessComponent } from "src/Components/process/process.component";
 import { TemplateCardComponent } from "src/Components/Shared/template-card/template-card.component";
 import { ExpansionPanelComponent } from "src/Components/faqs/expansion-panel/expansion-panel.component";
 
 const modules = [
   LayoutModule,
-  MatDialogModule,
-  MatSlideToggleModule,
-  MatInputModule,
-  MatTableModule,
-  MatTabsModule,
   MatToolbarModule,
   MatButtonModule,
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule,
-  MatProgressSpinnerModule,
   MatExpansionModule,
-  MatTooltipModule,
   MatCardModule,
-  FormsModule,
-  ReactiveFormsModule,
-  MatBadgeModule,
-  MatSelectModule,
-  MatSliderModule,
 ];
 @NgModule({
   declarations: [
