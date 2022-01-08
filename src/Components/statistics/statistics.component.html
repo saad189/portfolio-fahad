@@ -9,26 +9,87 @@
       <span>Great Website</span>
     </div>
   </div>
-  <div class="row">
-    <div class="cards-container">
+
+  <ng-template #teamTemplate>
+    <div class="team-container">
+      <span class="heading">Our Team</span>
+      <span
+        >I have a great team of people with me, Each an Expert in their domain.
+        Our Vision and ideas complement each other; Leading to a great product
+        for our clients.</span
+      >
+    </div>
+  </ng-template>
+
+  <ng-template #clientTemplate>
+    <div class="client-container">
+      <span class="color-word">12</span><span class="small-word">+</span>
+      <span>Satisfied Clients</span>
+    </div>
+  </ng-template>
+
+  <ng-template #experienceTemplate>
+    <div class="experience-container">
+      <span>3 Years</span>
+      <span>Experience</span>
+    </div>
+  </ng-template>
+
+  <ng-template #dedicationTemplate>
+    <div class="dedication-container">
+      <span>100%</span>
+      <span>Dedication</span>
+    </div>
+  </ng-template>
+
+  <ng-template #projectsTemplate>
+    <div class="projects-container">
+      <span>21</span>
+      <span>Built Projects</span>
+    </div>
+  </ng-template>
+
+  <ng-template #designsTemplate>
+    <div class="designs-container">
       <div class="row">
         <div class="col-lg-6">
-          <app-image-cards [card]="benefitsCards[0]"></app-image-cards>
+          <span>Stunning Designs</span>
+          <span
+            >We Build Beautifully Designed Web and Mobile Projects for you,
+            Using Modern tools</span
+          >
         </div>
-        <div class="col-lg-5">
-          <div class="grid-container">
-            <ng-container *ngFor="let card of smallCards; let i = index">
-              <div class="{{ i > 1 ? 'pt-2' : '' }} grid-item pr-2">
-                <app-image-cards [card]="card"></app-image-cards>
-              </div>
-            </ng-container>
+        <div class="col-lg-6">
+          <img [src]="appImageUrl" />
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <div class="cards-container pb-custom">
+    <div class="row">
+      <div class="col-lg-6 mt-2">
+        <app-template-card [model]="teamModel"></app-template-card>
+      </div>
+      <div class="col-lg-6">
+        <div class="grid-container">
+          <div class="grid-item">
+            <app-template-card [model]="clientModel"></app-template-card>
+          </div>
+          <div class="grid-item">
+            <app-template-card [model]="experienceModel"></app-template-card>
+          </div>
+          <div class="grid-item">
+            <app-template-card [model]="dedicationModel"></app-template-card>
+          </div>
+          <div class="grid-item">
+            <app-template-card [model]="projectsModel"></app-template-card>
           </div>
         </div>
       </div>
-
-      <div class="row pt-3 pb-custom">
-        <app-image-cards [card]="benefitsCards[1]"></app-image-cards>
-      </div>
+    </div>
+    <div class="row pt-3">
+      <app-template-card [model]="designsModel"></app-template-card>
     </div>
   </div>
 </div>

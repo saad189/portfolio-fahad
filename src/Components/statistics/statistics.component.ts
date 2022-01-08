@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { CardInfo } from '../Shared/card-model';
 
 @Component({
@@ -10,66 +10,62 @@ export class StatisticsComponent implements OnInit {
   width_small = "16rem";
   height_small = "13rem";
 
-  smallCards: CardInfo[] = [
-    {
-      title: '12+',
-      content: 'Satisfied Clients',
-      width: this.width_small,
-      height: this.height_small,
-      titleClass: "",
-      contentClass: ""
-    },
-    {
-      title: '3 Years',
-      content: 'Experience',
-      width: this.width_small,
-      height: this.height_small,
-      titleClass: "",
-      contentClass: ""
-    },
-    {
-      title: '100%',
-      content: 'Dedication',
-      width: this.width_small,
-      height: this.height_small,
-      titleClass: "",
-      contentClass: ""
-    },
-    {
-      title: '21',
-      content: 'Built Projects',
-      width: this.width_small,
-      height: this.height_small,
-      titleClass: "",
-      contentClass: ""
-    }
-  ];
 
-  benefitsCards: CardInfo[] = [
-    {
-      title: "Our Team",
-      content: `I have a great team of people with me, Each an Expert in their domain.
-    Our Vision and ideas complement each other; Leading to a great product for our clients`,
-      width: "33.5rem",
-      height: "26.5rem",
-      titleClass: "",
-      contentClass: ""
+  teamModel = {};
+  clientModel = {};
+  experienceModel = {};
+  dedicationModel = {};
+  projectsModel = {};
+  designsModel = {};
 
-    },
+  @ViewChild("teamTemplate", { static: true }) teamTemplate: TemplateRef<any>;
+  @ViewChild("clientTemplate", { static: true }) clientTemplate: TemplateRef<any>;
+  @ViewChild("experienceTemplate", { static: true }) experienceTemplate: TemplateRef<any>;
+  @ViewChild("dedicationTemplate", { static: true }) dedicationTemplate: TemplateRef<any>;
+  @ViewChild("projectsTemplate", { static: true }) projectsTemplate: TemplateRef<any>;
+  @ViewChild("designsTemplate", { static: true }) designsTemplate: TemplateRef<any>;
 
-    {
-      title: 'Stunning Designs',
-      content: 'We build beautifully designed web and mobile projects for you using modern tools',
-      width: '69rem',
-      height: '24rem',
-      imageUrl: "../../assets/appImage.png",
-      titleClass: "",
-      contentClass: ""
-    }
-  ]
+  refUrl = "../../assets";
+
+  appImageUrl = this.refUrl + '/appImage.png';
+
   constructor() { }
 
   ngOnInit() {
+
+    this.teamModel = {
+      template: this.teamTemplate,
+      width: "34.5rem",
+      height: "27rem",
+    };
+    this.clientModel = {
+      template: this.clientTemplate,
+      width: this.width_small,
+      height: this.height_small
+    }
+    this.experienceModel = {
+      template: this.experienceTemplate,
+      width: this.width_small,
+      height: this.height_small
+    }
+
+    this.dedicationModel = {
+      template: this.dedicationTemplate,
+      width: this.width_small,
+      height: this.height_small
+    }
+    this.projectsModel = {
+      template: this.projectsTemplate,
+      width: this.width_small,
+      height: this.height_small
+    }
+    this.designsModel = {
+      template: this.designsTemplate,
+      width: '69rem',
+      height: '24rem',
+      background: 'linear-gradient(to right, #e7505f , #ab62cf)'
+    }
+
   }
 
 }
