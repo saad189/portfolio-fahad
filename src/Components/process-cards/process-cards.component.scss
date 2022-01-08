@@ -1,6 +1,26 @@
 .example-card {
-  min-height: 25rem;
-  min-width: 50rem;
-  height: 45vh;
-  width: 50vw;
+  height: 60vh;
+  width: 65vw;
+  padding: 5vw;
+}
+
+mat-card-subtitle {
+  color: blue;
+  font-size: 1.5vw;
+}
+
+.mat-card-title {
+  padding-top: 1.5vh;
+  font-size: 2vw;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+span {
+  letter-spacing: 0.2vw;
+  word-spacing: 0.2vw;
+  width: 90%;
+  padding-top: 5vh;
+  padding-left: 2.5%;
+  font-size: 1.6vw;
+  line-height: 4vh;
 }

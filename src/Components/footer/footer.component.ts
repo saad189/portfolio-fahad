@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
-
+  year = '2022';
+  name = 'Muhammad Fahad Nasir';
   ngOnInit() {
   }
 

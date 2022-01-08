@@ -1,10 +1,38 @@
 .container-footer {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   .text-area {
-    display: flex;
-    flex-direction: column;
-  }
-  span {
     font-size: 3rem;
+    font-weight: 900;
   }
-  height: 50vh;
+  height: 45vh;
+  a {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  mat-divider {
+    margin-top: 5rem;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-top-width: 1px;
+  }
+  .final {
+    margin-left: 25%;
+    width: 50%;
+  }
+  .float-left {
+    float: left;
+  }
+  .float-right {
+    float: right;
+  }
+
+  .opacity-down {
+    opacity: 75%;
+  }
 }
