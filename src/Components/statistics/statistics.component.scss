@@ -59,6 +59,7 @@ span {
 
   span {
     font-size: 1.5rem;
+    letter-spacing: 2px;
     word-spacing: 0.5rem;
   }
   .heading {
@@ -66,5 +67,41 @@ span {
     letter-spacing: 3px;
     font-size: 4rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+.client-container,
+.experience-container,
+.dedication-container,
+.projects-container {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 4rem;
+
+  .green-color {
+    padding-right: 2rem;
+  }
+  .purple-color {
+  }
+  .pink-color {
+  }
+  .blue-color {
+  }
+  .color-word {
+    font-size: 5.5rem;
+    font-weight: normal;
+    height: 2rem;
+    padding-bottom: 4rem;
+  }
+  .small-word {
+    position: absolute;
+    top: 4rem;
+    left: 10.5rem;
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: large;
+    letter-spacing: 1px;
   }
 }
